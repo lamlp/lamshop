@@ -49,6 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="LamShopDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +67,10 @@
     <ProjectReference Include="..\LamShop.Common\LamShop.Common.csproj">
       <Project>{57ff7c32-f364-4dd0-85dc-888e572f874a}</Project>
       <Name>LamShop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LamShop.Model\LamShop.Model.csproj">
+      <Project>{41862d3d-8193-4e1a-9299-f0b28477b952}</Project>
+      <Name>LamShop.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
